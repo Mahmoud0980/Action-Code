@@ -27,8 +27,8 @@ export default function SectionServices() {
         {/* العنوان */}
         <div className="services-title">
           <h2 className="text-2xl md:text-4xl text-[#223B72] font-bold">
-            {t.services} <br />
-            Our Comprehensive Tech Services.
+            {t.servicesTitle} <br />
+            {t.servicesSubtitle}
           </h2>  
           <img
             src={titleImage}
@@ -44,8 +44,7 @@ export default function SectionServices() {
             <img src={icon1} alt="" className="mb-4" />
             <h3 className="text-lg md:text-xl font-bold mb-2 text-[#223B72]">{t.customSoftware}</h3>
             <p className="text-gray-500 text-sm md:text-base">
-              Create custom software tailored for your unique needs,
-              including front-end, and core back-end technology.
+              {t.customSoftwareDesc}
             </p>
           </div>
 
@@ -53,8 +52,7 @@ export default function SectionServices() {
             <img src={icon2} alt="" className="mb-4" />
             <h3 className="text-lg md:text-xl font-bold mb-2 text-[#223B72]">{t.qaTesting}</h3>
             <p className="text-gray-500 text-sm md:text-base">
-              Create custom software tailored for your unique needs,
-              including front-end, and core back-end technology.
+              {t.qaTestingDesc}
             </p>
           </div>
 
@@ -62,8 +60,7 @@ export default function SectionServices() {
             <img src={icon3} alt="" className="mb-4" />
             <h3 className="text-lg md:text-xl font-bold mb-2 text-[#223B72]">{t.aiData}</h3>
             <p className="text-gray-500 text-sm md:text-base">
-              Use leading AI, machine learning, and data engineering
-              technologies to unlock business value.
+              {t.aiDataDesc}
             </p>
           </div>
 
@@ -71,8 +68,7 @@ export default function SectionServices() {
             <img src={icon4} alt="" className="mb-4" />
             <h3 className="text-lg md:text-xl font-bold mb-2 text-[#223B72]">{t.uxUi}</h3>
             <p className="text-gray-500 text-sm md:text-base">
-              Create beautiful, pixel-perfect, and easy-to-use
-              designs that delight your end users.
+              {t.uxUiDesc}
             </p>
           </div>
 
@@ -80,8 +76,7 @@ export default function SectionServices() {
             <img src={icon5} alt="" className="mb-4" />
             <h3 className="text-lg md:text-xl font-bold mb-2 text-[#223B72]">{t.mobileApp}</h3>
             <p className="text-gray-500 text-sm md:text-base">
-              Build performant, scalable, and secure mobile
-              applications for iOS and Android devices.
+              {t.mobileAppDesc}
             </p>
           </div>
 
@@ -89,8 +84,7 @@ export default function SectionServices() {
             <img src={icon6} alt="" className="mb-4" />
             <h3 className="text-lg md:text-xl font-bold mb-2 text-[#223B72]">{t.platformInfra}</h3>
             <p className="text-gray-500 text-sm md:text-base">
-              Ensure applications are secure, fault tolerant and highly
-              available with our DevOps and Security engineers.
+              {t.platformInfraDesc}
             </p>
           </div>
 

@@ -27,7 +27,7 @@ export default function SectionLatestProjects() {
        </div>
 
         <div className="flex justify-center mt-10">
-          <button className="projects-btn bg-[#223B72] text-white px-8 py-3 rounded-full hover:opacity-90">{t.viewWork || "Our full Projects"}</button>
+          <button className="projects-btn bg-[#223B72] text-white px-8 py-3 rounded-full hover:opacity-90">{t.fullProjects}</button>
         </div>
       </div>
     </section>
