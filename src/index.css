@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #223B72;
+  --color-accent: #2563EB;
+  --color-light-bg: #F5F7FB;
+  --color-muted: #6B7280;
+  --shadow-hero: 0px 40px 80px rgba(0,0,0,0.15);
+}
+
 :root {
   line-height: 1.5;
   font-weight: 400;

@@ -21,7 +21,7 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 md:gap-5">
-            <button className="bg-primary text-white px-6 md:px-7 py-3 rounded-full text-sm font-medium shadow-md hover:opacity-90 transition">
+            <button className="bg-[#223B72] text-white px-6 md:px-7 py-3 rounded-full text-sm font-medium shadow-md hover:opacity-90 transition">
               {t.startProject}
             </button>
 
