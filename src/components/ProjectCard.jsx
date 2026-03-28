@@ -1,4 +1,8 @@
+import { useLanguage } from "../context/LanguageContext";
+
 export default function ProjectCard({ image, title, category }) {
+  const { t } = useLanguage();
+
   return (
     <div className="relative w-[317px] h-[220px]">
       {/* Image */}
@@ -20,8 +24,8 @@ export default function ProjectCard({ image, title, category }) {
           {category}
         </p>
 
-        <span className="inline-flex items-center gap-2 text-[#223B72] text-[14px] font-medium">
-          Readmore <span>→</span>
+        <span className="inline-flex items-center gap-2 text-[#223B72] text-[14px] font-medium cursor-pointer hover:opacity-80 transition">
+          {t.readMore} <span className="rtl:rotate-180">→</span>
         </span>
       </div>
     </div>

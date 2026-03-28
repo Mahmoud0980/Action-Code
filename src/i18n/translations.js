@@ -86,6 +86,7 @@ export const translations = {
     empoweringVision: "Empowering Your Digital Vision",
     compTechSolutions: "Comprehensive Tech Solutions",
     techSolutionsDesc: "We provide scalable, secure and modern technology services tailored to your business growth.",
+    readMore: "Read more",
 
     // Projects / Portfolio
     latestProjects: "Our Latest Projects",
@@ -216,6 +217,7 @@ export const translations = {
     empoweringVision: "تمكين رؤيتك الرقمية",
     compTechSolutions: "حلول تقنية شاملة",
     techSolutionsDesc: "نحن نقدم خدمات تقنية حديثة وآمنة وقابلة للتوسع مصممة لنمو عملك.",
+    readMore: "اقرأ المزيد",
 
     // Projects / Portfolio
     latestProjects: "أحدث مشاريعنا",
