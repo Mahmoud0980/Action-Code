@@ -1,0 +1,138 @@
+/* Section wrapper */
+.projects-section{
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+/* Card */
+.projects-card{
+  max-width: 1344px;
+  margin: 0 auto;
+  background: #F7F7FD;
+  border-radius: 36px;
+  padding: 56px 70px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top-left decorative shape */
+.projects-deco{
+  position: absolute;
+  top: 34px;
+  left: 44px;
+  width: 70px;
+  height: auto;
+}
+
+/* Title */
+.projects-title{
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  color: #223b72;
+  margin: 0 0 36px;
+}
+
+/* Logos row */
+.projects-logos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+  margin-bottom: 42px;
+}
+
+/* Unified logo box (VERY IMPORTANT) */
+.logo-box{
+  width: 160px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Default logo sizing (works for PNG/SVG when used as <img>) */
+.logo-box img{
+  max-height: 40px;
+  max-width: 160px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.55;
+  filter: grayscale(100%);
+}
+
+/* If some logos are imported as inline SVG component <Logo/> */
+.logo-box svg{
+  max-height: 40px;
+  max-width: 160px;
+  width: auto;
+  height: auto;
+  opacity: 0.55;
+  filter: grayscale(100%);
+}
+
+/* Make LG visually bigger */
+.logo-box.lg img,
+.logo-box.lg svg{
+  transform: scale(1.6);   /* جرّب 1.4 - 1.9 حسب رغبتك */
+  transform-origin: center;
+}
+
+/* Button */
+.projects-btn{
+  display: block;
+  margin: 0 auto;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #4f8df7, #2a6ef4);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.projects-btn:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .projects-card{
+    padding: 48px 24px 52px;
+    border-radius: 28px;
+  }
+
+  .projects-deco{
+    top: 18px;
+    left: 18px;
+    width: 56px;
+  }
+
+  .projects-title{
+    font-size: 30px;
+  }
+
+  .projects-logos{
+    gap: 28px;
+  }
+
+  .logo-box{
+    width: 140px;
+    height: 46px;
+  }
+
+  .logo-box img,
+  .logo-box svg{
+    max-height: 34px;
+    max-width: 140px;
+  }
+
+  .logo-box.lg img,
+  .logo-box.lg svg{
+    transform: scale(1.6);
+  }
+}

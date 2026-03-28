@@ -1,0 +1,126 @@
+/* مهم */
+*{ box-sizing: border-box; }
+
+.cta-wrap{
+  background: #fff;
+  padding: 80px 48px 260px;  
+}
+
+
+.cta-container{
+  max-width: 1660px;
+  margin: 0 auto;
+}
+
+/* الكارد الأزرق */
+.cta-card{
+  width: 100%;
+  background: #5FA6E6;
+  border-radius: 36px;
+  padding: 78px 40px 260px;
+
+  position: relative;
+  text-align: center;
+  overflow: visible;
+}
+
+
+.cta-vector6{
+  position: absolute;
+  top: 150px;
+  right: -60px;     
+  left: auto;
+
+  width: 191.15px;
+  height: 170.19px;
+
+  opacity: 0.8;
+  border-radius: 22.05px;
+  transform: rotate(4.39deg);
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* العنوان */
+.cta-title{
+  margin: 0 0 26px;
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #ffffff;
+
+  position: relative;
+  z-index: 3;
+}
+
+/* الزر (بدون حدود) */
+.cta-btn{
+  border: none;
+  outline: none;
+
+  background: #ffffff;
+  color: #2F76D9;
+
+  font-weight: 700;
+  font-size: 14px;
+
+  padding: 12px 28px;
+  border-radius: 999px;
+  cursor: pointer;
+
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+
+  position: relative;
+  z-index: 3;
+}
+
+/* الصورة السداسية (ملفك جاهز، لا clip-path) */
+.cta-photo{
+  position: absolute;
+  left: 50%;
+  bottom: -190px;            /* نزول تحت الكارد */
+  transform: translateX(-50%);
+
+  width: 720px;
+  max-width: 92%;
+  height: auto;
+
+  z-index: 2;
+  pointer-events: none;
+}
+
+.cta-photo img{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .cta-wrap{
+    padding: 70px 16px 220px;
+  }
+
+  .cta-card{
+    padding: 56px 18px 220px;
+    border-radius: 28px;
+  }
+
+  .cta-title{
+    font-size: 30px;
+  }
+
+  .cta-photo{
+    width: min(720px, 92%);
+    bottom: -170px;
+  }
+
+  .cta-vector6{
+    width: 200px;
+    height: auto;
+    right: -20px;
+    top: 140px;
+  }
+}
